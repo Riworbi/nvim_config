@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
 
     -- colorscheme
     use({
-        'folke/tokyonight.nvim', lazy = false, priority = 1000, opts = {},
+        'navarasu/onedark.nvim'
     })
     
 	-- treesitter
@@ -31,7 +31,18 @@ return require('packer').startup(function(use)
 	-- fugitive
 	use ('tpope/vim-fugitive')
 
+    use ('hrsh7th/nvim-cmp')
+    use ('hrsh7th/cmp-nvim-lsp')
+    use ('neovim/nvim-lspconfig')
+    use ('williamboman/mason-lspconfig.nvim')
+    use ('williamboman/mason.nvim')
 
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional
+        },
+    }
 end)
 
 
