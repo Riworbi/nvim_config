@@ -24,6 +24,11 @@ return require('packer').startup(function(use)
 		run = ':TSUpdate'
 	})
 
+    -- gitSigns
+    use ({
+        'lewis6991/gitsigns.nvim'
+    })
+    
 	-- undotree
 	use ('mbbill/undotree')
 
@@ -37,12 +42,6 @@ return require('packer').startup(function(use)
     use ('williamboman/mason-lspconfig.nvim')
     use ('williamboman/mason.nvim')
 
-    use {
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-            'nvim-tree/nvim-web-devicons', -- optional
-        },
-    }
 end)
 
 
