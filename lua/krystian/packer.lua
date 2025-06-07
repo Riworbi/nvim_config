@@ -13,16 +13,17 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-    -- colorscheme
-    use({
-        'navarasu/onedark.nvim'
-    })
-    
 	-- treesitter
 	use ({
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	})
+
+    -- colorscheme
+    use { "ellisonleao/gruvbox.nvim" }
+
+
+    use {'mfussenegger/nvim-jdtls'}
 
     -- gitSigns
     use ({
