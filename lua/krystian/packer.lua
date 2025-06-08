@@ -20,9 +20,9 @@ return require('packer').startup(function(use)
 	})
 
     -- colorscheme
-    use { "ellisonleao/gruvbox.nvim" }
-
-
+    use { "catppuccin/nvim", as = "catppuccin" }
+    
+    -- nvim-jdtls
     use {'mfussenegger/nvim-jdtls'}
 
     -- gitSigns
